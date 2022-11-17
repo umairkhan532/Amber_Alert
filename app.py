@@ -79,19 +79,6 @@ with st.form("car_pic", clear_on_submit=False):
                 st.write(f"Suspect: {suspect}")
                 st.write(f"Vehicle: {make} {model} {year}")
                 st.write("Link to Image Source\n[Link](https://www.thecarconnection.com/)")
-                
-                list = [option,location, user_name, str(age), description, suspect, make, model, str(year),img]
-                
-                # mystring=' '
-                # for x in list:
-                #     mystring += ' '+x        
-                st.write(f"{list}")
-                requests.post('https://api.mynotifier.app', {
-                "apiKey": '5323697b-e00d-453a-a08f-d60d622d6020',
-                "message": "Amber Alert",
-                "description":list,
-                "type": "warning", # info, error, warning or success
-                })
             
             if pic is not None:
                 with col3:    
