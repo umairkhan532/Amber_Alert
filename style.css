@@ -1,0 +1,67 @@
+div.css-1n76uvr.e1tzin5v0
+{
+    /* Form */
+    text-align: center; color: black; background-color: rgba(0,0,0,.5); color: #fff;
+}
+
+div.css-1kyxreq.etr89bj2 
+{
+/* 
+Amber alert logo image */
+display: block;  
+margin-left: auto;  
+margin-right: auto; 
+margin-top: auto;
+margin-bottom: auto; 
+   }
+  
+div.css-ocqkz7.e1tzin5v4{
+    /* Report */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: 40px;    
+    text-align: left; 
+    color: black; 
+    background-color: rgba(0,0,0,.8); 
+    color: #fff;
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+    padding: 20px; 
+}
+
+div.css-1r6slb0.e1tzin5v2{
+    /* Car output */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+div.css-1v0mbdj.etr89bj1{
+    /* Child picture */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+
+
+
+.button{
+    /* Load Button  */
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+
+label.css-k3w14i.effi0qh3{
+    font-size: 17px;
+}
