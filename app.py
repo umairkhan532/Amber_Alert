@@ -12,7 +12,7 @@ with open('style.css')as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 # Using pandas to cut down the data
-df = pd.read_csv("toyota_cars.csv")
+df = pd.read_csv("all_cars.csv")
 mapper = dict([(i, j) for i, j in zip(
     df.Model.unique(), range(len(df.Model.unique())))])
 
@@ -64,20 +64,20 @@ with st.form("car_pic", clear_on_submit=False):
         col1, col2, col3 = st.columns(3)
 
         # Used PushNotifier for sending notifications to phone
-        pn = pn.PushNotifier(username='umairkhan532', password='Mustanggtr#18', package_name='com.amberalert101.app',
-                             api_key='E5MA6D4DD6C3VBV46V75B6C3VB5MA6E5MA6EMTTKFB')
+        pn = pn.PushNotifier(username='mohammedkhan', password='AmberAlert123', package_name='com.amberalert.app',
+                             api_key='B5OH6575BD4DDV2VB6C3VEV46BV46575BBBTTFFBKF')
 
-        pn.login('Mustanggtr#18')
+        pn.login('AmberAlert123')       
 
         # Victim Image
         if pic:
             p = "Victim_pictures/" + pic.name
-            pn.send_image(p, devices=['BLWo', '9QKz'])
+            pn.send_image(p, devices=['oQ3X'])
         else:
             pn.send_text("No Victim Image")
 
         pn.send_url('https://www.thecarconnection.com/',
-                    silent=False, devices=['BLWo', '9QKz'])
+                    silent=False, devices=['oQ3X'])
 
         # Retrieving image from the dataset
         names = df[((df.Make == make) & (df.Model == model)
@@ -91,7 +91,7 @@ with st.form("car_pic", clear_on_submit=False):
             c = img.filename
 
             # Sending notification of car image
-            pn.send_image(c, devices=['BLWo', '9QKz'])  # Car Image
+            pn.send_image(c, devices=['oQ3X'])  # Car Image
         else:
             with col2:
                 st.markdown("Car Image not found")
